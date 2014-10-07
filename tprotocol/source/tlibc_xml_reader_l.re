@@ -1,5 +1,5 @@
-#include "protocol/tlibc_xml_reader.h"
-#include "protocol/tlibc_xml_reader_scanner.h"
+#include "tlibc_xml_reader.h"
+#include "tlibc_xml_reader_scanner.h"
 #include "tlibc_xml_reader_l.h"
 #include <string.h>
 #include <stdlib.h>

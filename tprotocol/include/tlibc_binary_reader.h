@@ -8,7 +8,7 @@ extern "C" {
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "protocol/tlibc_abstract_reader.h"
+#include "tlibc_abstract_reader.h"
 
 typedef struct tlibc_binary_reader_s
 {

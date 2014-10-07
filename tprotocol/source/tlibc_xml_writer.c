@@ -1,6 +1,6 @@
-#include "protocol/tlibc_xml_writer.h"
+#include "tlibc_xml_writer.h"
 #include "tlibc_error_code.h"
-#include "protocol/tlibc_abstract_writer.h"
+#include "tlibc_abstract_writer.h"
 #include "tlibcdef.h"
 
 

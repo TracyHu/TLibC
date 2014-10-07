@@ -7,7 +7,7 @@ extern "C" {
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "protocol/tlibc_abstract_writer.h"
+#include "tlibc_abstract_writer.h"
 
 typedef struct tlibc_binary_writer_s
 {
