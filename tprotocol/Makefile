@@ -4,6 +4,7 @@ HOME=../
 CINC=-Iinclude -Isource -I$(HOME)/tcore/include
 
 CFILE=$(wildcard source/*.c)
+REFILE=$(wildcard source/*.re)
 
 include $(HOME)/build.mk
 
