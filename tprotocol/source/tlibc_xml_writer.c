@@ -1,14 +1,13 @@
 #include "tlibc_xml_writer.h"
 #include "tlibc_error_code.h"
 #include "tlibc_abstract_writer.h"
-#include "tlibcdef.h"
+#include "tlibc_define.h"
 
 
 #include <string.h>
 #include <assert.h>
 #include <stdio.h>
 #include "tlibc_bool.h"
-#include "tlibcdef.h"
 #include "tlibc_inttypes.h"
 
 void tlibc_xml_writer_init(tlibc_xml_writer_t *self, char *start, char*limit)

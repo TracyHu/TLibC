@@ -5,6 +5,8 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#define TLIBC_MAX_LENGTH_OF_IDENTIFIER 255
+#define TLIBC_MAX_PATH_LENGTH 1024
 
 
 #define TLIBC_UNUSED(x) (void)(x)

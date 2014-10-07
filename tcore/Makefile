@@ -3,6 +3,8 @@ TARGET= $(LIBRARY)
 HOME=../
 CINC=-Iinclude -Isource
 
+CFILE=$(wildcard source/*.c)
+
 include $(HOME)/build.mk
 
 dep:

@@ -1,6 +1,6 @@
 ﻿#include "tlibc_csv_reader.h"
 #include "tlibc_error_code.h"
-#include "tlibcdef.h"
+#include "tlibc_define.h"
 
 #include <stddef.h>
 #include <stdlib.h>

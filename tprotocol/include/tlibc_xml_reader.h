@@ -8,7 +8,7 @@ extern "C" {
 #include "tlibc_abstract_reader.h"
 #include "tlibc_error_code.h"
 #include <stddef.h>
-#include "tlibcdef.h"
+#include "tlibc_define.h"
 
 #define TLIBC_MAX_LENGTH_OF_IDENTIFIER 255
 #define TLIBC_MAX_PATH_LENGTH 1024
