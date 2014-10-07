@@ -389,7 +389,7 @@ void tlibc_csv_reader_close(tlibc_csv_reader_t *self)
 	line_close(self);
 }
 
-static int get_field_index(tlibc_csv_reader_t *self, uint32_t col)
+static int32_t get_field_index(tlibc_csv_reader_t *self, int32_t col)
 {
 	uint32_t i;
 	if((col < 0) || (col >= self->top_line_fields_num))
@@ -406,8 +406,8 @@ static int get_field_index(tlibc_csv_reader_t *self, uint32_t col)
 	{
 		if(strcmp(self->top_line_fields[i], self->super.name + 1) == 0)
 		{
-			self->field_index[self->col] = i;
-			return i;
+			self->field_index[self->col] = (int32_t)i;
+			return (int32_t)i;
 		}
 	}
 	return -1;
