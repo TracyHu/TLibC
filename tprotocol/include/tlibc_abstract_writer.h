@@ -7,7 +7,7 @@ extern "C" {
 
 #include "tlibc_error_code.h"
 #include <stdint.h>
-#include <stdbool.h>
+#include "tlibc_bool.h"
 
 typedef struct tlibc_abstract_writer_s tlibc_abstract_writer_t;
 struct tlibc_abstract_writer_s

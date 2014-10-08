@@ -10,6 +10,9 @@ extern "C" {
 #include <stddef.h>
 #include "tlibcdef.h"
 
+#define TLIBC_MAX_LENGTH_OF_IDENTIFIER 255
+#define TLIBC_MAX_PATH_LENGTH 1024
+
 typedef struct tlibc_xml_reader_yyltype_s
 {
 	char file_name[TLIBC_MAX_PATH_LENGTH];

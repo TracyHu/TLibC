@@ -4,6 +4,7 @@
 #include <stdint.h>
 #include <stdio.h>
 #include <stddef.h>
+#include "tlibcdef.h"
 
 void tlibc_abstract_reader_init(tlibc_abstract_reader_t *self)
 {

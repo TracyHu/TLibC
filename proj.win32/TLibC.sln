@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TProtocol", "TLibC.vcxproj", "{6D3C3BBC-F70D-4366-AFF7-259BB632458E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TCore", "TCore.vcxproj", "{52F6F268-4BF5-46DD-8B5F-785033E0FB61}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6D3C3BBC-F70D-4366-AFF7-259BB632458E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6D3C3BBC-F70D-4366-AFF7-259BB632458E}.Debug|Win32.Build.0 = Debug|Win32
+		{6D3C3BBC-F70D-4366-AFF7-259BB632458E}.Release|Win32.ActiveCfg = Release|Win32
+		{6D3C3BBC-F70D-4366-AFF7-259BB632458E}.Release|Win32.Build.0 = Release|Win32
+		{52F6F268-4BF5-46DD-8B5F-785033E0FB61}.Debug|Win32.ActiveCfg = Debug|Win32
+		{52F6F268-4BF5-46DD-8B5F-785033E0FB61}.Debug|Win32.Build.0 = Debug|Win32
+		{52F6F268-4BF5-46DD-8B5F-785033E0FB61}.Release|Win32.ActiveCfg = Release|Win32
+		{52F6F268-4BF5-46DD-8B5F-785033E0FB61}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

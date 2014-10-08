@@ -7,7 +7,7 @@ extern "C" {
 
 
 #include <stdint.h>
-#include <stdbool.h>
+#include "tlibc_bool.h"
 #include "tlibc_error_code.h"
 
 #define TLIBC_READER_NAME_LENGTH 65536

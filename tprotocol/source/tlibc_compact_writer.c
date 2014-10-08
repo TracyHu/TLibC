@@ -5,7 +5,7 @@
 
 #include <string.h>
 #include <assert.h>
-#include <endian.h>
+#include "tlibc_endian.h"
 
 
 static tlibc_error_code_t tlibc_compact_varint16_encode(uint16_t n, char *buff_ptr, uint32_t *buff_size)

@@ -10,13 +10,14 @@
 #include <stdio.h>
 #include <errno.h>
 #include <stdlib.h>
-#include <stdbool.h>
+#include <string.h>
+#include "tlibc_bool.h"
 
 tlibc_error_code_t tlibc_xml_reader_push_file(tlibc_xml_reader_t *self, const char *file_name)
 {
 	tlibc_error_code_t ret = E_TLIBC_NOERROR;
 	FILE* fin;
-	ssize_t file_size;
+	long file_size;
 	char c;
 	char *start, *curr, *limit;
 	size_t i;

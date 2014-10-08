@@ -5,8 +5,8 @@
 
 #include <string.h>
 #include <assert.h>
-#include <endian.h>
-#include <stdbool.h>
+#include "tlibc_endian.h"
+#include "tlibc_bool.h"
 
 
 void tlibc_binary_reader_init(tlibc_binary_reader_t *self, const char *addr, uint32_t size)

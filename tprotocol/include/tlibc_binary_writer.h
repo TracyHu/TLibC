@@ -6,7 +6,7 @@ extern "C" {
 #endif
 
 #include <stdint.h>
-#include <stdbool.h>
+#include "tlibc_bool.h"
 #include "tlibc_abstract_writer.h"
 
 typedef struct tlibc_binary_writer_s

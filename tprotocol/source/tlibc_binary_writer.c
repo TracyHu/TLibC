@@ -5,9 +5,9 @@
 
 #include <string.h>
 #include <assert.h>
-#include <endian.h>
+#include "tlibc_endian.h"
 #include <stdint.h>
-#include <stdbool.h>
+#include "tlibc_bool.h"
 
 void tlibc_binary_writer_init(tlibc_binary_writer_t *self, char *addr, uint32_t size)
 {

@@ -1,4 +1,4 @@
-#include "tlibc_csv_reader.h"
+﻿#include "tlibc_csv_reader.h"
 #include "tlibc_error_code.h"
 #include "tlibcdef.h"
 
@@ -389,9 +389,9 @@ void tlibc_csv_reader_close(tlibc_csv_reader_t *self)
 	line_close(self);
 }
 
-static int get_field_index(tlibc_csv_reader_t *self, int32_t col)
+static int get_field_index(tlibc_csv_reader_t *self, uint32_t col)
 {
-	int32_t i;
+	uint32_t i;
 	if((col < 0) || (col >= self->top_line_fields_num))
 	{
 		return -1;
