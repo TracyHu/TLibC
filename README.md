@@ -10,8 +10,8 @@ TLibC是一个跨平台的C语言库
 
 功能
 ----
-    TCore 常用算法以及数据结构。
-	TProtocol 提供对binary, compact, csv, xml数据格式的操作。
+- TCore 常用算法以及数据结构。
+- TProtocol 提供对binary, compact, csv, xml数据格式的操作。
 
 安装
 ----
