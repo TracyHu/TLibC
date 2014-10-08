@@ -15,4 +15,5 @@ TLibC是一个跨平台的C语言库
 
 安装
 ----
-- 略
+- make
+- make install
