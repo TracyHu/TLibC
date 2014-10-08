@@ -15,5 +15,7 @@ TLibC是一个跨平台的C语言库
 
 安装
 ----
-- make
-- make install
+- 安装 [re2c](http://www.re2c.org/) 编译器
+- 编译
+    make
+    make install
