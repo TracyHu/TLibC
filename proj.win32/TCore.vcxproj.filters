@@ -33,5 +33,16 @@
     <ClInclude Include="..\tcore\include\tlibc_wordsize.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="..\tcore\include\tlibc_define.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\tcore\include\tlibc_string.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tcore\source\tlibc_string.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

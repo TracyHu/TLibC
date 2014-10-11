@@ -1,6 +1,10 @@
 #ifndef _H_TLIBC_CSV_READER_H
 #define _H_TLIBC_CSV_READER_H
 
+#ifdef  __cplusplus
+extern "C" {
+#endif
+
 #include "tlibc_abstract_reader.h"
 #include "tlibc_error_code.h"
 #include <stdint.h>
@@ -82,6 +86,10 @@ tlibc_error_code_t tlibc_csv_read_double(tlibc_abstract_reader_t *super, double 
 tlibc_error_code_t tlibc_csv_read_char(tlibc_abstract_reader_t *super, char *val);
 
 tlibc_error_code_t tlibc_csv_read_string(tlibc_abstract_reader_t *super, char *str, uint32_t str_len);
+
+#ifdef  __cplusplus
+}
+#endif
 
 #endif //_H_TLIBC_CSV_READER_H
 

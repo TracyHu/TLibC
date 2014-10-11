@@ -43,6 +43,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\GitHub\TLibC\tcore\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -64,10 +65,15 @@
   <ItemGroup>
     <ClInclude Include="..\tcore\include\tlibcdef.h" />
     <ClInclude Include="..\tcore\include\tlibc_bool.h" />
+    <ClInclude Include="..\tcore\include\tlibc_define.h" />
     <ClInclude Include="..\tcore\include\tlibc_endian.h" />
     <ClInclude Include="..\tcore\include\tlibc_error_code.h" />
     <ClInclude Include="..\tcore\include\tlibc_inttypes.h" />
+    <ClInclude Include="..\tcore\include\tlibc_string.h" />
     <ClInclude Include="..\tcore\include\tlibc_wordsize.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\tcore\source\tlibc_string.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
