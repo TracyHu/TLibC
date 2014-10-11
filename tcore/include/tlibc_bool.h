@@ -1,6 +1,8 @@
 #ifndef _H_TLIBC_BOOL_H
 #define _H_TLIBC_BOOL_H
 
+#ifndef __cplusplus
+
 #if defined(_WIN32) || defined(_WIN64)
 #  ifndef bool
 #    define bool    int
@@ -16,6 +18,7 @@
 
 #else
 #    include <stdbool.h>
+#endif
 #endif
 
 #endif//_H_TLIBC_BOOL_H
