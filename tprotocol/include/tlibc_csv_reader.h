@@ -25,19 +25,15 @@ typedef struct tlibc_csv_reader_s
 	char *cur_line;
 	size_t cur_line_size;
 
-	bool pre_read_uint32;
-	int32_t col;
-	int32_t field_index[TLIBC_CSV_FIELD_NUM];
 	char* field;
 	char* field_end;
 	bool read_enum_name_once;
-	uint32_t pre_u32;
 }tlibc_csv_reader_t;
 
 
 
 #define tlibc_csv_reader_get_cur_col(self) ((self)->col)
-#define tlibc_csv_reader_get_cur_name(self) ((self)->super.name + 1)
+#define tlibc_csv_reader_get_cur_name(self) (&(self)->super.name[1])
 
 
 tlibc_error_code_t tlibc_csv_reader_init(tlibc_csv_reader_t *self, const char *top_line, size_t top_line_size);
@@ -48,18 +44,6 @@ tlibc_error_code_t tlibc_csv_reader_store(tlibc_csv_reader_t *self, const char *
 
 void tlibc_csv_reader_close(tlibc_csv_reader_t *self);
 
-
-tlibc_error_code_t tlibc_csv_read_vector_begin(tlibc_abstract_reader_t *super, const char* vec_name);
-
-tlibc_error_code_t tlibc_csv_read_vector_end(tlibc_abstract_reader_t *super, const char* vec_name);
-
-tlibc_error_code_t tlibc_csv_read_vector_element_begin(tlibc_abstract_reader_t *super, const char* var_name, uint32_t index);
-
-tlibc_error_code_t tlibc_csv_read_vector_element_end(tlibc_abstract_reader_t *super, const char* var_name, uint32_t index);
-
-tlibc_error_code_t tlibc_csv_read_field_begin(tlibc_abstract_reader_t *super, const char *var_name);
-
-tlibc_error_code_t tlibc_csv_read_field_end(tlibc_abstract_reader_t *super, const char *var_name);
 
 tlibc_error_code_t tlibc_csv_read_enum_begin(tlibc_abstract_reader_t *super, const char *enum_name);
 
@@ -92,4 +76,3 @@ tlibc_error_code_t tlibc_csv_read_string(tlibc_abstract_reader_t *super, char *s
 #endif
 
 #endif //_H_TLIBC_CSV_READER_H
-
