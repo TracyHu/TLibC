@@ -28,6 +28,7 @@ typedef struct tlibc_csv_reader_s
 	char* field;
 	char* field_end;
 	bool read_enum_name_once;
+	uint32_t last_index;
 }tlibc_csv_reader_t;
 
 
@@ -35,7 +36,7 @@ typedef struct tlibc_csv_reader_s
 #define tlibc_csv_reader_get_cur_col(self) ((self)->col)
 #define tlibc_csv_reader_get_cur_name(self) (&(self)->super.name[1])
 
-
+//按照tdr文件中定义的顺序放置csv可以加速读取。
 tlibc_error_code_t tlibc_csv_reader_init(tlibc_csv_reader_t *self, const char *top_line, size_t top_line_size);
 
 void tlibc_csv_reader_fini(tlibc_csv_reader_t *self);

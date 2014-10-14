@@ -298,6 +298,7 @@ tlibc_error_code_t tlibc_csv_reader_init(tlibc_csv_reader_t *self, const char *t
 	size_t i;
 	tlibc_abstract_reader_init(&self->super);
 
+	self->last_index = 0;
 	self->super.enable_name = true;
 	self->field = NULL;
 	self->read_enum_name_once = false;
@@ -387,7 +388,7 @@ static bool locate(tlibc_csv_reader_t *self)
 {
 	uint32_t i;
 
-	for(i = 0; i < self->top_line_fields_num; ++i)
+	for(i = self->last_index; i < self->top_line_fields_num; ++i)
 	{
 		if(strcmp(self->top_line_fields[i], self->super.name + 1) == 0)
 		{
@@ -395,6 +396,16 @@ static bool locate(tlibc_csv_reader_t *self)
 			return true;
 		}
 	}
+
+	for(i = 0 ; i < self->last_index; ++i)
+	{
+		if(strcmp(self->top_line_fields[i], self->super.name + 1) == 0)
+		{
+			self->field = self->cur_line_fields[i];
+			return true;
+		}
+	}
+
 	self->field = false;
 	return false;
 }
